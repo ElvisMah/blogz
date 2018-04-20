@@ -3,9 +3,11 @@
 {% block content %}
 
     <h1>User Login</h1>
-    <p>Do you have an account? If not, head over to <a href="/signup">set one up</a>!</p>
+    <div class="alert alert-danger">
+        <p>Need new account? <a style="font-weight: bold; color: red;" href="/signup">set one up quick</a>!</p>
+    </div>
     <!--  form action needs to match the url you want it to go to after submit -->
-    <form action="/login" method='POST'>
+    <form action="/login" method='POST' style="width: 400px;">
         <p class="flash">
         
         {% with messages = get_flashed_messages(with_categories=True) %}
@@ -26,7 +28,7 @@
             <span class="form_label">Password</span>
             <input name="password" type="password" value='{{password}}' />
         </label>
-        <input class="submit" type="submit" value="Submit" />
+        <input style="width: 100%; margin-top: 10px;" class="submit" type="submit" value="Submit" />
     </form>
     
 {% endblock %} 

@@ -10,6 +10,7 @@ body {
 h1 {
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .container {
@@ -51,6 +52,7 @@ h1 {
     line-height: 1rem;
     padding-left: 0.5rem;
     color: #aaa;
+    text-align: center;
 }
 
 /* submit button */
@@ -98,8 +100,9 @@ a {
     padding: 0.7rem 1rem; 
     background-color: orange;
     border: 0;
-    color: #FFFFFF; 
+    color: black; 
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
 }
@@ -108,8 +111,35 @@ a {
     padding: 0.7rem 1rem; 
     background-color: skyblue;
     border: 0;
-    color: #FFFFFF; 
+    color: black; 
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
 }
+
+ul {
+    width: 350px;
+    border: 1px solid white;
+    margin: 0 auto;
+    border-top: 5px solid orange;
+    border-bottom: 5px solid orange;
+}
+
+li {
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
