@@ -143,3 +143,9 @@ li {
     border-color: #ebccd1;
 }
 
+.author-name{
+    color: red;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2%;
+}
